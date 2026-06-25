@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ultimate Memory Challenge</title>
+        <link rel="stylesheet" href="game_style2.css">
+        <script src="complex_game.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🎮 Ultimate Memory Challenge 🎮</h1>
+            <div class="panel">
+                <h3>Player Dashboard</h3>
+                <p>
+                    Level: <span id="level">1</span> |
+                    Score: <span id="score">0</span> |
+                    Combo: <span id="combo">0</span>
+                </p>
+                <p>
+                    Time Remaining: <span id="time">60</span>s |
+                    Hints: <span id="hints">2</span>
+                </p>
+                <div id="progress">
+                    <div id="bar"></div>
+                </div>
+            </div>
+            <div id="game"></div>
+            <div class="panel">
+                <h3>Instructions</h3>
+                <p>Match all cards before time runs out. Wrong matches reset combo. </p>
+            </div>
+            <button onclick="startGame()">Restart</button>
+            <button onclick="useHint()">Use Hint</button>
+            <button onclick="alert('Settings opened')">Settings</button>
+        </div>
+    </body>
+</html>
